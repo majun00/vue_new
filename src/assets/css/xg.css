@@ -1,0 +1,88 @@
+/**
+ * 图片遮罩层1
+ */
+.xg_zz{           
+    position: relative;
+} 
+.xg_zz .xg_text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.35s ease-in-out;
+}
+.xg_zz a:hover .xg_text {
+    top:0;
+    opacity: 1;       
+}
+
+/**
+ * 图片遮罩层2
+ */
+.xg_zz1{           
+    position: relative;
+} 
+.xg_zz1 .xg_text1 {
+    position: absolute;
+    bottom:-200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.35s ease-in-out;
+}
+.xg_zz1 a:hover .xg_text1{
+    opacity: 1;
+    bottom:0;      
+}
+
+/**
+ * 图片上传本地预览
+ */
+.xg_file{
+    position: relative;
+    margin-bottom: 5px;
+}
+.xg_file1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+}
+.xg_file2{
+    width: 100px;
+    height: 100px;
+    overflow:hidden;
+    text-align: center;
+    line-height: 100px;
+}
+.xg_file3{
+    width: 100px;
+}
+.xg_file4{
+    width: 112px;
+    height: 112px;
+    border: solid 1px #ccc;
+    padding: 5px;
+    margin-bottom:5px;
+}
+.xg_file5{
+    float: left;
+    margin-right: 10px;
+}
+.xg_file6{
+    float: left;
+}
+
+
+
+
+
+        

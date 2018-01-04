@@ -1,0 +1,79 @@
+@import "config";
+
+body {
+  .list_top{
+    height: 175px;
+    background-color: #EAF0F4;
+    .container{
+      padding: 0;
+      padding-top: 16px;
+      i{
+        display: inline-block;
+        width: 54px;
+        height: 54px;
+        background: url("../images/logo_sm.png");
+        vertical-align: middle;
+      }
+      >span{
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 14px;
+        margin-right: 10px;
+        color: #515151;
+      }
+      s{
+        display: inline-block;
+        width: 18px;
+        height: 14px;
+        background: url("../images/level.png");
+        vertical-align: middle;
+      }
+      p{
+        font-size: 14px;
+        margin-bottom: 6px;
+        color: #6b6b6b;
+        span{
+          display: inline-block;
+          width: 250px;
+        }
+      }
+      .p1{
+        margin-top: 8px;
+      }
+
+    }
+  }
+
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    >.left{
+      width: 889px;
+      .table{
+        color: #6b6b6b;
+      }
+      .download{
+        text-align: center;
+        margin-top: 37px;
+        margin-bottom: 44px;
+        a{
+          padding: 0;
+          width: 400px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+        }
+      }
+
+
+    }
+    >.right{
+      width: 280px;
+      margin-left: 28px;
+
+    }
+
+
+  }
+
+}

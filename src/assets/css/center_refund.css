@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+.center_table, .center_table {
+	width: 880px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.table table tr {
+
+	height: 50px;
+	color: #515151;
+}
+.table table tr th {
+    background: #f2f2f2;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 20px;
+	padding: 10px;
+}
+.table tr {
+	color: #6b6b6b;
+	font-size: 1.2rem;
+	height: 50px;
+}
+.table table tr td {
+	line-height: 12px;
+	padding: 19px;
+}
+.table_hader select {
+	border: 1px solid #dddddd;
+	outline-style: none;
+	height: 30px;
+	width: 120px;
+}

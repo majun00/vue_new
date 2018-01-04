@@ -1,0 +1,26 @@
+    .el-tabs__item {
+      height: 46px;
+      font-size: 18px;
+      line-height: 46px;
+    }
+
+    .template_login .el-tabs__nav-wrap {
+      padding-left: 20px;
+    }
+
+    .el-collapse {
+      height: auto;
+    }
+
+    .el-collapse,
+    .el-collapse-item__header,
+    .el-collapse-item__wrap {
+      border-bottom: 0;
+    }
+
+    .el-collapse a {
+      display: inline-block;
+      font-size: 16px;
+      margin-left: 8px;
+      margin-right: 8px;
+    }

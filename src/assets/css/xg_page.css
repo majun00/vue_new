@@ -1,0 +1,20 @@
+.xg_page { 
+	height:30px;text-align: center;padding-top: 15px;font-size:13px!important;
+}
+.xg_page a { 
+	text-decoration: none; padding: 4px 15px; color: #000;border-radius: 15px;transition: background 0.5s linear,color 0.5s linear;
+}
+.xg_page a:hover {
+	background:#000;color: #fff;opacity:0.5;
+}
+.xg_page span { 
+	padding: 4px 15px; background: #000; color: #fff;border-radius: 15px;opacity:0.5;
+}
+.xg_page .aa {
+	height: 40px;
+	font:bold 20px/40px 宋体;
+}
+.xg_page .h {
+	background: #fff !important;
+	color: #555 !important;
+}

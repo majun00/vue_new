@@ -1,0 +1,321 @@
+@import "config";
+
+body {
+
+  .container {
+    padding-top: 28px;
+    .job-category {
+      font-size: 20px;
+      vertical-align: middle;
+      .job-nav {
+        float: left;
+        .job-nav-list {
+          position: relative;
+          width: 350px;
+          height: 58px;
+          line-height: 58px;
+          text-indent: 1em;
+          vertical-align: middle;
+          color: $font-color;
+          font-size: 18px;
+          margin-left: -19px;
+          .right-float {
+            font-size: 14px;
+            position: absolute;
+            top: 3px;
+            right: 20px;
+          }
+          .job-more {
+            @include divsize(600px, 700px);
+            display: none;
+            position: absolute;
+            z-index: 10;
+            background: #fff;
+            left: 350px;
+            top: 0px;
+            border: none;
+            -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.09);
+            -moz-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.09);
+            box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.09);
+            border-radius: 2px;
+            border-top-left-radius: 0;
+            .border-cover {
+              width: 2px;
+              height: 56px;
+              position: absolute;
+              left: -1px;
+              top: 0;
+              z-index: 20;
+              background: #fff;
+            }
+          }
+          &:hover {
+            -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.09);
+            -moz-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.09);
+            box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.09);
+            border-radius: 2px;
+            border-top-left-radius: 0;
+            .job-more {
+              display: block;
+            }
+          }
+          a {
+            display: inline-block;
+            margin-left: 10px;
+            text-align: left;
+            font-size: 14px;
+            &:hover {
+              color: $blue;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .advertis {
+        margin-top: 22px;
+        width: 869px;
+        height: 381px;
+      }
+      .clearfix {
+        clear: both;
+      }
+    }
+
+    .job-list {
+      padding-top: 40px;
+      .job-tab {
+        border-bottom: 1px solid darken(#fff, 10%);
+        li {
+          display: inline-block;
+          height: 46px;
+          font-size: 20px;
+          line-height: 46px;
+          margin-right: 50px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .job-tab-content {
+        padding-top: 20px;
+        li {
+          // display: none;
+          .job-info {
+            padding: 10px;
+            .box {
+              position: relative;
+              border: 1px solid #e6e6e6;
+              padding: 29px 14px 20px 14px;
+              color: $fontcolor;
+              &:hover {
+                border: 1px solid $blue;
+              }
+              >.name {
+                font-size: 16px;
+                margin-bottom: 12px;
+                margin-top: -10px;
+                color: $blue;
+                width: 100%;
+                border: 0;
+                text-align: left;
+                &:hover{
+                  background-color: transparent;
+                  text-decoration: underline;
+                }
+              }
+              .num {
+                font-size: 12px;
+                margin-bottom: 16px;
+              }
+              .date {
+                position: absolute;
+                right: 15px;
+                top: 30px;
+                color: $red;
+              }
+              .info {
+                margin-bottom: 29px;
+                a {
+                  color: $fontcolor;
+                  margin-right: 12px;
+                  &:hover {
+                    color: #fff;
+                  }
+                }
+              }
+              .company {
+                border-top: 1px solid #e6e6e6;
+                padding-top: 20px;
+                i {
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  background: url(../images/company.png) no-repeat;
+                  vertical-align: middle;
+                }
+                .name {
+                  font-size: 16px;
+                  vertical-align: middle;
+                  margin-left: 10px;
+                }
+                .time {
+                  position: absolute;
+                  bottom: 29px;
+                  right: 15px;
+                  color: $red;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .checkmore {
+      display: block;
+      width: 388px;
+      height: 50px;
+      border: 1px solid $blue;
+      color: $blue;
+      margin: 20px auto;
+      margin-bottom: 40px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 18px;
+      &:hover {
+        background: $blue;
+        color: #fff;
+      }
+      cursor: pointer;
+    }
+    .company-intro {
+      .hot-company {
+        height: 46px;
+        font-size: 20px;
+        line-height: 46px;
+        border-bottom: 2px solid #e6e6e6;
+        margin-bottom: 10px;
+        span {
+          display: inline-block;
+          width: 80px;
+          height: 46px;
+        }
+        &:hover {
+          cursor: pointer;
+          //width: 100px;
+          //height: 46px;
+        }
+      }
+      .company-list {
+        margin-top: 20px;
+        padding: 10px;
+        img{
+          width: 100%;
+        }
+        // .company-info {
+        //   border: 1px solid darken(#fff, 10%);
+        //   >.am-g{
+        //     margin-top: 10px;
+        //     margin-bottom: 10px;
+        //     padding: 0 10px;
+        //   }
+        //   &:hover {
+        //     border: 1px solid $blue;
+        //   }
+        //   img {
+        //     width: 100%;
+        //   }
+        //   .left {
+        //     p {
+        //       margin-bottom: 6px;
+        //     }
+        //     .p1 {
+        //       font-size: 16px;
+        //       color: $fontcolor;
+        //     }
+        //     .p2 {
+        //       .red {
+        //         font-size: 20px;
+        //         color: $red;
+        //         margin-right: 5px;
+        //       }
+        //       .gray {
+        //         font-size: 12px;
+        //         text-decoration: line-through;
+        //         color: #999;
+        //       }
+        //     }
+        //   }
+        //   .right {
+        //     text-align: right;
+        //     font-size: 12px;
+        //     p {
+        //       margin-bottom: 15px;
+        //     }
+        //     .p1 {
+        //       color: $red;
+        //     }
+        //   }
+        //   .am-progress{
+        //     width: 80px;
+        //     position: absolute;
+        //     bottom: 10px;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     border-radius: 2px;
+        //     border: 1px solid #e6e6e6;
+        //   }
+        // }
+      }
+    }
+    .on {
+      border-bottom: 2px solid $blue;
+    }
+    .link {
+      height: 46px;
+      // width: 100%;
+      border-bottom: 1px solid #e6e6e6;
+      p {
+        width: 80px;
+        height: 46px;
+        font-size: 20px;
+        line-height: 46px;
+        border-bottom: 2px solid $blue;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .link-list {
+      // overflow: hidden;
+      float: left;
+      width: 1000px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      height: 20px;
+      overflow: hidden;
+      a {
+        display: inline-block;
+        font-size: 16px;
+        margin: 8px;
+        &:hover {
+          color: $blue;
+          text-decoration: underline;
+        }
+      }
+    }
+    .morelink {
+      float: right;
+      margin-top: 20px;
+      color: $font-color;
+      // margin-right: 50px;
+      // margin-top: 26px;
+      height: 20px;
+      line-height: 20px;
+      &:hover {
+        cursor: pointer;
+      }
+      // top:10px;
+    }
+  }
+
+}

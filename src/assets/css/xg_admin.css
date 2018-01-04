@@ -1,0 +1,109 @@
+﻿/*后台样式*/
+
+/*top*/
+.top .sidebar-header img{
+    height: 80px;
+}
+.top .sidebar-header{
+    float: left;
+}
+.top .right{
+    float: right;
+    line-height: 80px;
+    padding-right: 20px;
+}
+.top .right img{
+    height: 50px;
+    border-radius: 25px;
+}
+.top a:hover {
+    text-decoration: none;
+}
+
+
+/*main*/
+.tb{
+    margin: 15px 10px 8px 10px;
+}
+.mbx{
+    height: 39px;
+    background: #222;
+    border-left: 1px solid #fff;
+}
+.lb{
+    margin: 0 10px;
+}
+
+/*.tb button,.tb table a,.tb .btn-success{
+    animation: button1 2s;
+}*/
+/*@keyframes animated_div
+{
+    0%      {transform: rotate(0deg);opacity: 0;}
+    100%    {transform: rotate(-720deg);opacity: 1;}
+}*/
+/*@keyframes button1
+{
+    0%      {transform:  translate(2000px,0);opacity: 0;}
+    100%    {transform:  translate(0,0);opacity: 1;}
+}*/
+.breadcrumb{
+    background: #222;
+}
+.tb .xg_sx i:hover{
+    text-decoration: none;
+    color: #f00;
+    text-shadow: 0 0 5px #f00;
+}
+
+
+/*menu*/
+.menu .a{
+    display: none;
+    font-size: 14px;
+    font: bold;
+}
+.menu a{
+    display: block;
+    line-height: 35px;
+    height: 35px;
+    padding-left:55px;
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+    transition: margin-bottom 0.5s linear,box-shadow 0.5s linear;
+}
+.menu a:hover{
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 8px;
+    box-shadow:0px  0px 5px 5px #0f0;
+    margin-bottom:8px;box-shadow:0px  0px 5px 5px #0f0;
+}
+.menu a:visited{
+    color:#fff;
+    text-decoration: none !important;
+}
+.menu a:link {
+    text-decoration: none;
+}
+.menu .xg_span{
+    font-size: 14px;
+    font: bold;
+    padding-left: 30px;
+    background: #222;
+    line-height: 40px;
+    height: 40px;
+    transition: margin-bottom 0.5s linear,box-shadow 0.5s linear;
+    /*border-bottom: 1px solid #555;*/
+}
+.menu .xg_span:hover{
+    margin-bottom:8px;box-shadow:0px  0px 5px 5px #f00;
+}
+.menu i{
+    margin-right: 10px;
+}
+.menu .pull-right{
+    line-height: 40px;
+}

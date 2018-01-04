@@ -1,0 +1,171 @@
+@import "config";
+
+body {
+  font-size: 16px;
+  label{
+    font-weight: normal;
+  }
+  .forget {
+    color: #333;
+  }
+  .forget .verify_img {
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+  .tain {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .tain > h2 {
+    background: url(../images/register.png) no-repeat;
+    color: $blue;
+    padding-left: 30px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 40px;
+  }
+  .tain > span {
+    color: red;
+  }
+  .box > .box-ul {
+    line-height: 55px;
+  }
+
+  .box > .box-ul > li > label {
+    text-align: right;
+    width: 150px;
+    display: inline-block;
+    color: #515151;
+    padding-right: 10px;
+  }
+  .box > .box-ul > li > input[type=button] {
+    width: 100px;
+    height: 35px;
+    border: 0;
+    border-radius: 3px;
+    background: $blue;
+    color: #fff;
+  }
+  .box > .box-ul > li > select {
+    width: 60px;
+    height: 33px;
+  }
+  .box > .box-ul > li.button-li > input[type=button] {
+    width: 60px;
+    height: 32px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    color: #666;
+  }
+  .box > .box-ul > li > input[type=submit] {
+    width: 300px;
+    height: 48px;
+    border: 0;
+    background: $blue;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 156px;
+    font-size: 18px;
+  }
+  .box > .box-ul > li > span {
+    display: inline-block;
+    padding-left: 20px;
+    color: #999;
+    font-size: 12px;
+  }
+  input[type="text"], input[type="password"] {
+    width: 300px;
+    height: 30px;
+    padding-left: 8px;
+  }
+  .box > .box-ul > li > input[type=button] {
+    width: 100px;
+    height: 35px;
+    border-radius: 3px;
+    background: $blue;
+    color: #fff;
+  }
+  .pw-strength{
+    position: relative;
+  }
+  .pw-bar {
+    background: url("../images/pwd-1.png") no-repeat;
+    height: 14px;
+    overflow: hidden;
+    width: 179px;
+    margin-left: 154px;
+    margin-top: 5px;
+  }
+  .pw-bar-on {
+    background: url("../images/pwd-2.png") no-repeat;
+    width: 0px;
+    height: 14px;
+    position: absolute;
+    top: 0px;
+    left: 154px;
+    transition: width .5s ease-in;
+    -moz-transition: width .5s ease-in;
+    -webkit-transition: width .5s ease-in;
+    -o-transition: width .5s ease-in;
+  }
+  .pw-weak .pw-defule {
+    width: 0px;
+  }
+  .pw-weak .pw-defule {
+    width: 0px;
+  }
+  .pw-weak .pw-bar-on {
+    width: 60px;
+  }
+  .pw-medium .pw-bar-on {
+    width: 120px;
+  }
+  .pw-strong .pw-bar-on {
+    width: 179px;
+  }
+  .pw-txt {
+    padding-top: 2px;
+    width: 180px;
+    overflow: hidden;
+    margin-left: 154px;
+  }
+  .pw-txt span {
+    color: #707070;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    width: 58px;
+    line-height: 2;
+  }
+  input{
+    border: 1px solid #ddd;
+  }
+  .li_first{
+    font-size: 14px;
+    label{
+      font-size: 16px;
+    }
+    input{
+      vertical-align: middle;
+      margin: 0;
+      margin-right: 5px;
+    }
+  }
+  .box>.box-ul>li>label#agree{
+    color: #999;
+    cursor: pointer;
+  }
+  .xieyi{
+    visibility: hidden;
+  }
+  #agree i{
+    display: inline-block;
+    width: 20px;height: 20px;
+    background: url(../images/agree.png) no-repeat;
+    vertical-align: middle;
+  }
+  #agree i.active{
+    background: url(../images/agree_blue.png) no-repeat;
+  }
+
+}

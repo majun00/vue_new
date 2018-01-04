@@ -1,0 +1,64 @@
+@import "config";
+
+html{
+  height: 100%;
+  body{
+    height: 100%;
+    >#app{
+      height: 100%;
+      >div{
+        height: 100%;
+      }
+    }
+    .top{
+      height: 40%;
+      background-color: $blue;
+    }
+    .bottom{
+      height: 50%;
+    }
+    .wrap{
+      width: 700px;
+      height: 438px;
+      background-color: #fff;
+      border: 1px solid #DDDDDD;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      .logo{
+        margin-top: -100px;
+      }
+      .signbox{
+        padding: 0 50px;
+        padding-top: 100px;
+        text-align: center;
+        .am-u-md-6:first-of-type{
+          border-right: 1px solid #e8e8e8;
+        }
+        .p1{
+          font-size: 22px;
+          color: $fontcolor;
+          margin-bottom: 20px;
+        }
+        .p2{
+          font-size: 14px;
+          color: $fontgray;
+          margin-bottom: 40px;
+        }
+        .p3{
+          margin-top: 40px;
+          a{
+            color: $blue;
+            font-size: 14px;
+            padding: 6px 20px;
+            &:hover{
+              color: #fff;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

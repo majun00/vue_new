@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+.main-top {
+	width: 999px;
+	overflow: hidden;
+}
+.main-top-hader {
+	width: 798px;
+	height: 98px;
+	border: 1px solid #dddddd;
+	margin: 80px auto 0 auto;
+}
+.main-top-cent {
+	width: 800px;
+	height: 78px;
+	border-bottom: 1px dashed #dddddd;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.main-top-hader-l {
+	width: 108px;
+	height: 98px;
+	float: left;
+}
+.main-top-hader-r {
+	width: 680px;
+	height: 98px;
+	float: left;
+	overflow: hidden;
+}
+.main-top-hader-l span {
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 25px 20px 25px 40px;
+}
+.main-top-hader-r-h {
+	margin: 28px 0 0 0;
+}
+.main-top-hader-r-b {
+	margin: 10px 0 0 0;
+}
+/*标题大字体*/
+.headline {
+	font-size: 18px;
+	font-weight: bold;
+	color: #515151;
+	line-height: 18px;
+}
+/*主文本字体*/
+.moreline {
+	font-size: 14px;
+	color: #919191;
+	line-height: 14px;
+}
+.morelinemin {
+	font-size: 12px;
+	color: #919191;
+	line-height: 14px;
+}
+/*边框*/
+.input-box {
+	width: 98px;
+	height: 38px;
+	border: 1px solid #dddddd;
+}
+.input-box-line {
+	line-height: 38px;
+	margin: 0 0 0 20px;
+}
+.file-box-line {
+	line-height: 50px;
+	margin: 0 0 0 20px;
+}
+.right-box {
+	float: right
+}
+.left-box {
+	float: left
+}
+.input-label {
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: #515151;
+	line-height: 38px;
+	display: block;
+	float: left;
+}
+.main-top-cent-h {
+	margin: 40px 0 0 0;
+}
+.main-bottom {
+	width: 800px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.main-bottom-inpbox {
+	width: 100%;
+	height: 40px;
+	margin-top: 20px;
+}
+.file-inpbox {
+	height: 50px;
+}
+.main-bottom-inpbox-l {
+	width: 220px;
+	height: 40px;
+	float: left;
+}
+.main-bottom-inpbox-r {
+	width: 570px;
+	height: 40px;
+	float: left;
+}
+.file-inpbox-l {
+	width: 270px;
+	height: 50px;
+}
+.file-inpbox-r {
+	width: 520px;
+	height: 50px;
+}
+.file-input-label {
+	line-height: 50px;
+}
+.file-input {
+	width: 48px;
+	height: 48px;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+.file-input-bg {
+	width: 48px;
+	height: 48px;
+	border: 1px dashed #dddddd;
+	display: block;
+	float: left;
+	background: url(../images/file-bg.png) center no-repeat;
+}
+.input-span {
+	display: block;
+	height: 38px;
+	width: 26px;
+	float: left;
+	line-height: 38px;
+	text-align: center
+}
+.file-span {
+	heiht: 48px;
+	line-height: 48px;
+}
+.file-input-bg-m {
+	margin: 0 40px 0 11px;
+}
+.resinbox {
+	margin: 0px;
+}
+.resinbox-pos {
+	float: left;
+	line-height: 14px;
+	margin: 10px 10px 0 10px;
+}
+.resinbox-pos-1 {
+	margin: 10px 10px 0 120px;
+}
+.main-showcar {
+	width: 400px;
+	height: 180px;
+	background: #f2f2f2;
+	overflow: hidden;
+	margin-left: 220px;
+}
+.main-showcar-cent-1 {
+	width: 210px;
+	height: 180px;
+	float: left;
+}
+.main-showcar-cent-2 {
+	width: 190px;
+	height: 180px;
+	float: left;
+}
+.main-showcar-cent-1 img {
+	margin: 20px 0 0 60px;
+}
+.main-showcar-cent-2 img {
+	margin: 20px 0 0 35px
+}
+.main-showcar-cent-head {
+	color: #515151;
+	margin: 20px 0 0 10px;
+}
+.main-showcar-cent-text {
+	margin: 10px 0 0 10px;
+	font-size: 12px;
+}
+.main-showcar-sl {
+	margin: 10px auto;
+	text-align: center;
+}
+.main-showcar-sl-2 {
+	margin: 10px 40px 0 0;
+}
+.savebtn {
+	width: 200px;
+	height: 46px;
+	background: #919191;
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	line-height: 46px;
+	border-radius: 4px;
+	margin: 60px 0 0 400px;
+}
+.pp {
+	color: #ffffff;
+}
+.main-btn {
+	width: 999px;
+}

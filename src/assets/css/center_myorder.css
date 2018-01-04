@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* CSS Document */
+.center_nav {
+	width: 880px;
+	height: 46px;
+	border-bottom: 1px solid #dddddd;
+	margin-top: 60px;
+}
+.center_nav ul li {
+	display: inline-block;
+}
+.center_nav a {
+	display: block;
+	padding: 0 35px;
+	line-height: 46px;
+	height: 46px;
+	color: #515151;
+	font-size: 1.8rem;
+}
+a.center_nav_active {
+	color: #ffffff;
+	background: #3788ff;
+}
+.center_nav a:hover {
+	background: #3788ff;
+	color: #ffffff;
+}
+.center_search {
+	width: 880px;
+	height: 90px;
+}
+.search_input {
+	width: 320px;
+	height: 40px;
+	display: block;
+	margin: 20px 0 0 0;
+}
+.search_input input {
+	border: 1px solid #dddddd;
+	height: 40px;
+	width: 240px;
+	float: left;
+	-webkit-border-radius: 3px 0 0 3px;
+	-o-border-radius: 3px 0 0 3px;
+	-moz-boder-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+	font-size: 1.4rem;
+	color: #6b6b6b;
+}
+.search_input a {
+	display: block;
+	width: 80px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	float: left;
+	color: #ffffff;
+	background: #3788ff;
+	-webkit-border-radius: 0 3px 3px 0;
+	-o-border-radius: 0 3px 3px 0;
+	-moz-border-radius: 0 3px 30px 0;
+	border-radius: 0 3px 3px 0;
+}
+.center_footer, .center_list, .center_thead {
+	width: 880px;
+	margin: 0 auto;
+}
+.table_del {
+	border-bottom: 0px;
+}
+.center_thead table tr th {
+	font-size: 1.6rem;
+	color: #515151;
+	font-weight: 400;
+	padding: 0;
+	height: 50px;
+	line-height: 50px;
+	background: #f2f2f2;
+}
+.center_thead select {
+	border: 1px solid #dddddd;
+	width: 140px;
+	color: #515151;
+}
+.center_list {
+	margin-top: 20px;
+}
+
+.list_table {
+	width: 100%;
+	text-align: center;
+	border: 1px solid #dddddd;
+}
+/*
+.list_table th {
+	height: 50px;
+	border-bottom: 1px solid #dddddd;
+	background: #f3f3f3;
+	text-align: center;
+	font: 400 1.6rem/50px 'Microsoft Yahei';
+	color: #515151;
+}
+.list_table td {
+	font: 400 1.4rem/3 'Microsoft Yahei';
+	color: #6b6b6b;
+	padding: 1.3rem;
+	padding-bottom: 2rem;
+}
+*/
+
+.am-btn-min {
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+.setcolor {
+	color: #3788ff !important;
+}
+.doubles {
+	width: 400px;
+	display: block;
+}
+
+
+
+
+
+
+
+/*弹出层*/
+.center_complain{
+	position: absolute;
+	top:200px;
+	left: 200px;
+	width:600px;
+	height: 400px;
+	border: 1px solid #dddddd;
+	background: #ffffff;
+}
+
+.complain_com{
+	width:400px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.complain_com label{
+	font:400 1.6rem/46px 'Microsoft yahei';
+	color: #515151;
+	float: left;
+}
+.complain_com input[type='text']{
+	width:300px;
+	height:46px;
+	border:1px solid #dddddd;
+	float: right;
+	color: #515151;
+}
+.complain_com textarea{
+	width:300px;
+	height: 100px;
+	border:1px solid #dddddd;
+	float: right;
+	color: #515151;
+	text-indent: 8px;
+}
+.com_btn{
+	display: block;
+	margin: 0 auto;
+	background: #919191;
+	width:180px;
+	height: 40px;
+	border-radius:4px;
+	margin-top: 50px;
+}
+.com_btn i{
+	color:#ffffff;
+}
+.center_complain_hide{
+	display:none;
+}
+/*占位符*/

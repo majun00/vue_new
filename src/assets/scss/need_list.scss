@@ -1,0 +1,275 @@
+@import "config";
+body {
+  .container {
+    // padding-top: 34px;
+    // padding-bottom: 40px;
+    >.left {
+      width: 889px;
+      .menu {
+        >div{
+          border-top: 0;
+          border: 1px solid #e8e8e8;
+          padding: 0px 10px 14px 10px;
+        }
+        .el-collapse-item__content{
+          padding-bottom: 0;
+        }
+        dl {
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+          dt {
+            display: inline-block;
+            background-color: rgba(194, 219, 255, .33);
+            padding: 0 14px;
+            a {
+              color: $blue;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+          dd {
+            display: inline-block;
+            margin-left: 20px;
+            a {
+              display: inline-block;
+              padding: 0 4px;
+              height: 30px;
+              line-height: 30px;
+              text-align: center;
+              border-radius: 3px;
+              &:hover {
+                background-color: $blue;
+                color: #FFFFFF;
+              }
+            }
+          }
+        }
+      }
+      .job-tab-content {
+        padding-top: 20px;
+        li {
+          // display: none;
+          .job-info {
+            padding: 0px;
+            padding-top: 15px;
+            .box {
+              position: relative;
+              border: 1px solid #e6e6e6;
+              padding: 29px 14px 20px 14px;
+              color: $fontcolor;
+              &:hover {
+                border: 1px solid $blue;
+              }
+              >.name {
+                font-size: 16px;
+                margin-bottom: 12px;
+                margin-top: -10px;
+                color: $blue;
+                width: 100%;
+                border: 0;
+                text-align: left;
+                &:hover {
+                  background-color: transparent;
+                  text-decoration: underline;
+                }
+              }
+              .num {
+                font-size: 12px;
+                margin-bottom: 16px;
+              }
+              .date {
+                position: absolute;
+                right: 15px;
+                top: 30px;
+                color: $red;
+              }
+              .info {
+                margin-bottom: 29px;
+                a {
+                  color: $fontcolor;
+                  margin-right: 12px;
+                  &:hover {
+                    color: #fff;
+                  }
+                }
+              }
+              .company {
+                border-top: 1px solid #e6e6e6;
+                padding-top: 20px;
+                i {
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  background: url(../images/company.png) no-repeat;
+                  vertical-align: middle;
+                }
+                .name {
+                  font-size: 16px;
+                  vertical-align: middle;
+                  margin-left: 10px;
+                }
+                .time {
+                  position: absolute;
+                  bottom: 29px;
+                  right: 15px;
+                  color: $red;
+                }
+              }
+              .state {
+                position: absolute;
+                bottom: 100px;
+                right: 20px;
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .brand {
+        margin-top: 60px;
+        h4{
+          margin-bottom: 10px;
+        }
+        a {
+          display: inline-block;
+          font-size: 15px;
+          margin-left: 0;
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+    }
+    >.right {
+      width: 280px;
+      margin-left: 28px;
+      h4 {
+        margin-left: 10px;
+        margin-bottom: 18px;
+      }
+      .company-list {
+        padding: 10px;
+        position: relative;
+        .company-info {
+          border: 1px solid darken(#fff, 10%);
+          >.am-g {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 0 10px;
+          }
+          &:hover {
+            border: 1px solid $blue;
+          }
+          img {
+            width: 100%;
+          }
+          .left {
+            padding: 0;
+            p {
+              margin-bottom: 6px;
+            }
+            .p1 {
+              font-size: 16px;
+              color: $fontcolor;
+            }
+            .p2 {
+              .red {
+                font-size: 20px;
+                color: $red;
+                margin-right: 5px;
+              }
+              .gray {
+                font-size: 12px;
+                text-decoration: line-through;
+                color: #999;
+              }
+            }
+            .p3 {
+              font-size: 12px;
+            }
+          }
+          .right {
+            padding: 0;
+            text-align: right;
+            font-size: 12px;
+            p {
+              margin-bottom: 4px;
+              margin-top: 10px;
+              color: #999999;
+            }
+          }
+          .am-progress {
+            width: 80px;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+            border: 1px solid #e6e6e6;
+          }
+        }
+      }
+      .job-info {
+        padding: 10px;
+        .box {
+          position: relative;
+          border: 1px solid #e6e6e6;
+          padding: 29px 14px 20px 14px;
+          color: $fontcolor;
+          &:hover {
+            border: 1px solid $blue;
+          }
+          >.name {
+            font-size: 16px;
+            margin-bottom: 12px;
+            margin-top: -10px;
+            color: $blue;
+            width: 100%;
+            border: 0;
+            text-align: left;
+            &:hover {
+              background-color: transparent;
+              text-decoration: underline;
+            }
+          }
+          .num {
+            font-size: 12px;
+            margin-bottom: 16px;
+          }
+          .date {
+            position: absolute;
+            right: 15px;
+            top: 30px;
+            color: $red;
+            font-size: 12px;
+          }
+          .company {
+            border-top: 1px solid #e6e6e6;
+            padding-top: 20px;
+            font-size: 12px;
+            i {
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+              background: url(../images/company.png) no-repeat;
+              vertical-align: middle;
+            }
+            .name {
+              vertical-align: middle;
+              margin-left: 10px;
+            }
+            .time {
+              position: absolute;
+              bottom: 29px;
+              right: 15px;
+              color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+}

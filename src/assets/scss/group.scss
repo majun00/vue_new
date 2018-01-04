@@ -1,0 +1,81 @@
+@import "config";
+
+body {
+
+  .container {
+    padding-top: 34px;
+    .imgs{
+      margin-bottom: 20px;
+      img{
+        vertical-align: top;
+      }
+      >span{
+        display: inline-block;
+        height: 400px;
+        width: 270px;
+      }
+    }
+    .company-list {
+      margin-top: 20px;
+      padding: 10px;
+      .company-info {
+        border: 1px solid darken(#fff, 10%);
+        >.am-g{
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding: 0 10px;
+        }
+        &:hover {
+          border: 1px solid $blue;
+        }
+        img {
+          width: 100%;
+        }
+        .left {
+          p {
+            margin-bottom: 6px;
+          }
+          .p1 {
+            font-size: 16px;
+            color: $fontcolor;
+          }
+          .p2 {
+            .red {
+              font-size: 20px;
+              color: $red;
+              margin-right: 5px;
+            }
+            .gray {
+              font-size: 12px;
+              text-decoration: line-through;
+              color: #999;
+            }
+          }
+
+        }
+        .right {
+          text-align: right;
+          font-size: 12px;
+          p {
+            margin-bottom: 15px;
+          }
+          .p1 {
+            color: $red;
+          }
+        }
+        .am-progress{
+          width: 80px;
+          position: absolute;
+          bottom: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 2px;
+          border: 1px solid #e6e6e6;
+        }
+      }
+    }
+
+
+  }
+
+}

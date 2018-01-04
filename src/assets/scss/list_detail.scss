@@ -1,0 +1,291 @@
+@import "config";
+
+body {
+  .list_top{
+    height: 300px;
+    padding-top: 40px;
+    background-color: #EAF0F4;
+    .container{
+      padding: 0;
+      position: relative;
+      h4{
+        font-size: 34px;
+        font-weight: normal;
+        margin-bottom: 6px;
+      }
+      p{
+        margin-bottom: 16px;
+      }
+      .p1{
+        font-size: 16px;
+        color: #919191;
+      }
+      .p2,.p3{
+        font-size: 22px;
+        color: #6b6b6b;
+      }
+      .p4{
+        font-size: 16px;
+        color: #919191;
+      }
+      .btns{
+        position: absolute;
+        top: 80px;
+        right: 50px;
+        a{
+          padding: 0;
+          width: 106px;
+          height: 46px;
+          line-height: 46px;
+          text-align: center;
+          margin-right: 30px;
+          i{
+            display: inline-block;
+            width: 21px;
+            height: 19px;
+            background: url(../images/love.png);
+            vertical-align: middle;
+            margin-right: 5px;
+          }
+          &:nth-of-type(1){
+            color: $blue;
+            &:hover{
+              color: $blue;
+              background-color: transparent;
+              i{
+                background: url(../images/love_blue.png);
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .container {
+    padding-top: 34px;
+    padding-bottom: 40px;
+    >.left{
+      width: 889px;
+      h4{
+        font-size: 26px;
+        font-weight: normal;
+        color: #515151;
+        margin-bottom: 18px;
+      }
+      p{
+        font-size: 18px;
+        color: #6b6b6b;
+        margin-bottom: 12px;
+      }
+      .progress{
+        margin-top: 60px;
+        margin-bottom: 100px;
+        width: 100%;
+        position: relative;
+        span{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .circle{
+          width: 44px;
+          height: 44px;
+          line-height: 44px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: #919191;
+          font-size: 22px;
+          color: #fff;
+        }
+        .line{
+          width: 120px;
+          height: 1px;
+          background-color: #919191;
+        }
+        .bgblue{
+          background-color: $blue;
+        }
+        .p.blue{
+          color: $blue;
+        }
+        .p{
+          color:#919191;
+          position: absolute;
+          left: 0px;
+          bottom: -40px;
+        }
+        .p2{
+          left: 170px;
+        }
+        .p3{
+          left: 170*2px;
+        }
+        .p4{
+          left: 170*3px;
+        }
+        .p5{
+          left: 170*4px;
+        }
+      }
+      .table{
+        color: #6b6b6b;
+      }
+      .download{
+        text-align: center;
+        margin-top: 37px;
+        margin-bottom: 44px;
+        a{
+          padding: 0;
+          width: 400px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+        }
+      }
+      .another{
+        width: 899px;
+        margin-left: -10px;
+        .am-u-md-3{
+          padding: 10px;
+          .box{
+            height: 160px;
+            padding: 10px 20px;
+            border: 1px solid #e8e8e8;
+            a{
+              i{
+                display: inline-block;
+                width: 54px;
+                height: 54px;
+                background: url("../images/logo_sm.png");
+                vertical-align: middle;
+              }
+              span{
+                font-size: 16px;
+                color: #515151;
+                vertical-align: middle;
+                margin: 0 5px;
+                font-weight: bold;
+
+              }
+              s{
+                display: inline-block;
+                width: 18px;
+                height: 14px;
+                background: url("../images/level.png");
+                vertical-align: middle;
+              }
+              p{
+                font-size: 12px;
+              }
+              .p1{
+                margin-top: 8px;
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+    >.right{
+      width: 280px;
+      margin-left: 28px;
+      h4{
+        margin-left: 10px;
+        margin-bottom: 18px;
+
+      }
+      >.box{
+        height: 160px;
+        padding: 10px 20px;
+        border: 1px solid #e8e8e8;
+        a{
+          i{
+            display: inline-block;
+            width: 54px;
+            height: 54px;
+            background: url("../images/logo_sm.png");
+            vertical-align: middle;
+          }
+          span{
+            font-size: 16px;
+            color: #515151;
+            vertical-align: middle;
+            margin: 0 5px;
+            font-weight: bold;
+          }
+          s{
+            display: inline-block;
+            width: 18px;
+            height: 14px;
+            background: url("../images/level.png");
+            vertical-align: middle;
+          }
+          p{
+            font-size: 12px;
+            margin-bottom: 12px;
+            color: #6b6b6b;
+          }
+          .p1{
+            margin-top: 8px;
+          }
+        }
+      }
+      .job-info {
+        padding: 10px;
+        .box {
+          position: relative;
+          border: 1px solid #e6e6e6;
+          padding: 29px 14px 20px 14px;
+          color: $fontcolor;
+          &:hover {
+            border: 1px solid $blue;
+          }
+          >.name {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: $blue;
+          }
+          .num {
+            font-size: 12px;
+            margin-bottom: 16px;
+          }
+          .date {
+            position: absolute;
+            right: 15px;
+            top: 30px;
+            color: $red;
+            font-size: 12px;
+          }
+          .company {
+            border-top: 1px solid #e6e6e6;
+            padding-top: 20px;
+            font-size: 12px;
+            i {
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+              background: url(../images/company.png) no-repeat;
+              vertical-align: middle;
+            }
+            .name {
+              vertical-align: middle;
+              margin-left: 10px;
+            }
+            .time {
+              position: absolute;
+              bottom: 29px;
+              right: 15px;
+              color: $red;
+            }
+          }
+        }
+      }
+
+    }
+
+
+  }
+
+}

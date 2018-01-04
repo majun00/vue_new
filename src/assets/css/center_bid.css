@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+.center_footer, .center_list, .center_head,.center_thead{
+	width: 880px;
+	margin: 0 auto;
+}
+
+
+.center_thead{
+	height: 50px;
+	border: 1px solid #dddddd;
+	margin-top: 20px;
+	background: #f3f3f3;
+	text-align: center;
+	line-height: 50px;
+}
+.center_thead .am-u-sm-5,.center_thead .am-u-sm-2{
+	margin-top:0;
+}
+.am-pagination-default{
+	margin-top:70px;
+}
+
+.center_head{
+	height: 200px;
+	border: 1px solid #dddddd;
+	margin-top: 30px;
+}
+
+.margin_top20{
+	margin-top:20px;
+}
+
+.center_head div{
+	height:50px;
+	font-size:1.6rem;
+	color: #515151;
+	padding: 0;
+	line-height: 50px;
+}
+.center_head div p{
+	margin-left:30px;
+}
+.center_head div p img{
+   position:relative;
+   top:-3px;
+	margin-right: 4px;
+}
+.center_head div p a.love{
+	color:#3788ff;
+	margin-left: 10px;
+}
+.center_head .am-u-sm-12{
+	text-align:center;
+}
+.center_head .am-u-sm-12 a{
+	display:inline-block;
+	width: 148px;
+	height: 40px;
+	border:1px solid #3788ff;
+	border-radius: 4px;
+	color:#3788ff;
+	font-size:1.6rem;
+}
+.center_head .am-u-sm-12 a:hover{
+	background:#3788ff;
+	color:#ffffff;
+	border:0;
+}
+
+

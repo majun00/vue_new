@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+.center_main{ font:400 1.6rem/1 'Microsoft Yahei';}
+.center_heading{ width:940px; color: #ffffff;  overflow: hidden; }
+.center_heading div{ width:940px; border-bottom: 1px solid #dddddd; margin: 30px 0 30px 0;}
+.center_heading span{ width:140px; height: 40px; background: #3788ff; display: block;  line-height: 40px; text-align: center;}
+.group_table tr th{ background:#3788ff; color: #ffffff; font-size: 1.8rem; font-weight: 400; line-height: 100px; height: 50px;}
+.group_table td{ position:relative; }
+.group_bh span{display: block; float:left;}
+.group_bh span p{ margin-left: 30px;}
+.group_bh span a{ color:#515151;}
+.group_bh span i{ font-size:1.4rem; color:#aeaeae; margin-left: 15px;}
+.group_img{ display: block; float: left;}
+.group_price{ display: inline-block; float: left; overflow: hidden;}
+.group_img a{ width:100px; height: 100px; line-height: 150px; margin-left: 30px;}
+.group_price p a{ color:#515151;}
+.group_price .toppr{ font-size: 1.8rem; color:#f73737; font-weight: bold;}
+.group_price .lowerpr{ font-size:1.4rem; color: #a9a9a9; text-decoration: line-through}
+.group_price span{ height:50px; display: block; margin: 50px 20px;}
+.price_btn{ width:144px; height: 40px; border-radius: 3px; margin-top: 60px; background: #3788ff;}
+.price_btn i{ color:#ffffff;}
+.groups{ height:150px;}
+.margins-s{margin-top: 70px; display: block;  font-style: normal; color:#515151; font-size:1.6rem;}
+
+
