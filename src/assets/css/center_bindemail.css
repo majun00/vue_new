@@ -1,9 +1,8 @@
 @charset "utf-8";
-@charset "utf-8";
 /* CSS Document */
 .top_email {
 	width: 100%;
-	height: 238px;
+	height: 100px;
 	overflow: hidden;
 }
 .top_em_m {
@@ -67,10 +66,9 @@
 	margin: 0 auto;
 }
 .cen_for {
-	width: 400px;
+	width: 410px;
 	margin: 0 auto;
 	margin-top: 95px;
-	overflow: hidden;
 }
 .bos {
 	font-size: 18px;
@@ -106,9 +104,11 @@
 .cen_top_psx {
 	margin-top: 50px;
 }
-.send_btn {
+a.button.send_btn {
 	width: 160px;
 	height: 46px;
+	line-height: 36px;
+	text-align: center;
 	border-radius: 4px;
 	font-size: 16px;
 	display: block;
@@ -119,7 +119,7 @@
 .ok_btn {
 	width: 200px;
 	height: 46px;
-	background: #919191;
+	background: #3788ff;
 	border-radius: 4px;
 	color: #ffffff;
 	font-size: 18px;
@@ -168,7 +168,7 @@
 .top_em_mm {
 	width: 654px;
 	height: 76px;
-	margin: 80px auto;
+	margin: 0px auto;
 }
 .em_img_3 {
 	width: 64px;
@@ -182,6 +182,23 @@
 	margin: 24px 15px 0 15px;
 	float: left;
 }
+.em_line_4 {
+  width: 200px;
+  height: 2px;
+  background: #3788ff;
+  margin: 24px 15px 0 15px;
+  float: left;
+}
+
+.em_line_5 {
+  width: 400px;
+  height: 2px;
+  background: #3788ff;
+  margin: 30px 15px 0 15px;
+  float: left;
+}
+
+
 .num_1 {
 	width: 50px;
 	height: 50px;

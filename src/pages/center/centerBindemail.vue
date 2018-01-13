@@ -7,7 +7,7 @@
                 <div class="center_head_tis">
                     <div><img src="../../images/email.png"><p style="color: #3788ff;">绑定邮箱</p></div>
                     <span></span>
-                    <div><img src="../../images/gou1.png"><p>修改成功</p></div>
+                    <div><img src="../../images/gou1.png"><p>绑定成功</p></div>
                 </div>
             </div>
             <!--绑定体-->
@@ -32,7 +32,7 @@
                 <div class="center_head_tis">
                     <div><img src="../../images/email.png"><p style="color: #3788ff;">绑定邮箱</p></div>
                     <span></span>
-                    <div><img src="../../images/gou2.png"><p>修改成功</p></div>
+                    <div><img src="../../images/gou2.png"><p>绑定成功</p></div>
                 </div>
             </div>
             <!--绑定体-->

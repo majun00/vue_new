@@ -1,0 +1,114 @@
+/*弹出层*/
+
+.conter-s {
+  position: relative;
+}
+
+.setsite {
+  width: 618px;
+  z-index: 50;
+  position: absolute;
+  left: 190px;
+  top: 200px;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.setsite-inputbox {
+  /* width: 500px; */
+  /* height: 46px; */
+  margin: 20px 0px 20px 80px;
+
+}
+
+.input-box {
+  width: 398px;
+  height: 44px;
+  border: 1px solid #dddddd;
+  margin-left: 10px;
+  /* float: right; */
+}
+
+.input-label {
+  display: block;
+  float: left;
+  font-size: 1.6rem;
+  color: #515151;
+  line-height: 44px;
+  font-weight: 400;
+}
+
+.setsite-inputbox-active {
+  /* margin: 50px auto 10px auto; */
+  margin-top: 40px;
+}
+
+.savebtn {
+  width: 200px;
+  height: 46px;
+  background: #3788ff;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  line-height: 46px;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.ppp {
+  color: #ffffff;
+  text-align: center;
+}
+
+.setsite-btnbox {
+  margin: 50px auto;
+}
+
+.deletop {
+  margin: 0 auto 50px auto;
+}
+
+
+/*主文本字体*/
+
+.moreline {
+  font-size: 1.4rem;
+  color: #919191;
+  line-height: 1.4rem;
+}
+
+.repassword span {
+  font-size: 1.4rem;
+  color: #919191;
+  line-height: 1.4rem;
+  display: inline-block;
+  padding-left: 104px;
+  margin: 10px 0;
+}
+
+.repassword .setsite-inputbox{
+    margin-top: 30px;
+}
+
+.repassword span.moreline {
+  padding-left: 0;
+}
+
+.margin {
+  margin: 10px auto 0 auto;
+}
+
+.setsite input {
+  text-indent: 1rem;
+}
+
+.setsite textarea {
+  text-indent: 1rem;
+}
+
+.textarea-box{
+  margin-top: 20px;
+  text-indent: 1rem;
+  font-size: 14px;
+}

@@ -34,6 +34,7 @@ export default {
             el.parentNode.children[1].innerHTML = "验证通过";
             el.className = "move moveSuccess";
             el.onmousedown = null;
+            sessionStorage.setItem("move","1")
           }
         };
       };

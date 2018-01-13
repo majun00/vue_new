@@ -11,7 +11,7 @@
     }
     p {
       padding-left: 20px;
-      span {
+      >span {
         display: inline-block;
         width: 500px;
         margin-bottom: 20px;
@@ -131,6 +131,7 @@
         .safe_a{
           font-size: 14px;
           color: #6b6b6b;
+          padding-left: 40px;
         }
       }
       .am-g.active{

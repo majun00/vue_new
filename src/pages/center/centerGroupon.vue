@@ -88,7 +88,7 @@
                    	   	   	  	   <span class="group_img">
                    	   	   	  	   	    <a href="#"><img src="images/ss1000ul.png"></a>
                    	   	   	  	   </span>
-                            <span class="group_price">
+                                   <span class="group_price">
                   	   	   	  	   	    <span>
                    	   	   	  	   	    <p><a href="#">管嘴盒100ul</a></p>
 									    <p><i class="toppr">￥72</i><i class="lowerpr">￥100</i></p>

@@ -469,7 +469,10 @@ $(document).ready(function(){
 			$(this).toggleClass("click");
 		});
 
-		
+		//发布需求 多选
+        $(".center_shop_form input[type='checkbox']").click(function () {
+            alert("hoole")
+        })
 		
 
     });

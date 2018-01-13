@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="friendlink">
         <!--友情链接-->
         <div class="link">
             <p>友情链接</p>
@@ -54,6 +54,7 @@
 </script>
 
 <style scoped lang="scss">
-
-
+.friendlink a{
+    color: #999999;
+}
 </style>

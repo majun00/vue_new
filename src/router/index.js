@@ -9,12 +9,22 @@ import Register from '@/pages/login/Register'
 import Forget from '@/pages/login/Forget'
 import listItem from '@/pages/list/listItem'
 import listDetail from '@/pages/list/listDetail'
+import quote from '@/pages/list/quote'
 import companyList from '@/pages/company/companyList'
 import companyDetail from '@/pages/company/companyDetail'
 import Group from '@/pages/group/Group'
 import groupDetail from '@/pages/group/groupDetail'
 import Center from '@/pages/center/Center'
+import centerBuyer from '@/pages/center/centerBuyer'
+import centerDemand from '@/pages/center/centerDemand'
+import centerMyorder from '@/pages/center/centerMyorder'
+import centerPackage from '@/pages/center/centerPackage'
+import centerBillingdetails from '@/pages/center/centerBillingdetails'
 import centerSet from '@/pages/center/centerSet'
+import centerSetid from '@/pages/center/centerSetid'
+import centerFirm from '@/pages/center/centerFirm'
+import centerMess from '@/pages/center/centerMess'
+
 import centerPack from '@/pages/center/centerPack'
 import centerSend from '@/pages/center/centerSend'
 import centerList from '@/pages/center/centerList'
@@ -22,6 +32,8 @@ import centerGroup from '@/pages/center/centerGroup'
 import centerNews from '@/pages/center/centerSet'
 import centerCollect from '@/pages/center/centerSet'
 import centerBill from '@/pages/center/centerBill'
+import centerCollects from '@/pages/center/centerCollect'
+
 
 Vue.use(Router)
 
@@ -40,6 +52,10 @@ const routes = [{
       {
         path: 'listDetail',
         component: listDetail
+      },
+      {
+        path: 'quote',
+        component: quote
       },
       {
         path: 'group',
@@ -68,7 +84,43 @@ const routes = [{
     component: Center,
     children: [{
         path: '',
+        component: centerBuyer
+      },
+      {
+        path: 'centerBuyer',
+        component: centerBuyer
+      },
+      {
+        path: 'centerDemand',
+        component: centerDemand
+      },
+      {
+        path: 'centerMyorder',
+        component: centerMyorder
+      },
+      {
+        path: 'centerPackage',
+        component: centerPackage
+      },
+      {
+        path: 'centerBillingdetails',
+        component: centerBillingdetails
+      },
+      {
+        path: 'centerSet',
         component: centerSet
+      },
+      {
+        path: 'centerSetid',
+        component: centerSetid
+      },
+      {
+        path: 'centerFirm',
+        component: centerFirm
+      },
+      {
+        path: 'centerMess',
+        component: centerMess
       },
       {
         path: 'pack',
@@ -97,7 +149,11 @@ const routes = [{
       {
         path: 'bill',
         component: centerBill
-      }
+      },
+        {
+            path: 'centerCollect',
+            component: centerCollects
+        },
     ]
   },
   {
@@ -127,7 +183,6 @@ let router = new Router({
   routes
 });
 
-
 router.beforeEach((to, from, next) => {
   console.log(store.state.token)
   if (to.meta.requireAuth) { // 判断该路由是否需要登录权限
@@ -145,6 +200,10 @@ router.beforeEach((to, from, next) => {
     next();
   }
 })
+
+router.afterEach((to, from, next) => {
+  window.scrollTo(0, 0);
+});
 
 export default router;
 

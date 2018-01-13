@@ -6,20 +6,45 @@
 .center_heading p{ font:1.6rem/1 'Microsoft Yahei'; color:#3788ff; margin: 31px 0;}
 .center_shop_form{ width:880px; padding-bottom: 20px; border: 1px solid #dddddd; font:1.4rem/1 'Microsoft Yahei'; color:#6b6b6b; overflow: hidden;}
 .center_shop_form select{ border: 1px solid #dddddd; outline-style: none; height: 30px;}
+.center_shop_form label{ font:1.4rem/1 'Microsoft Yahei'; padding-right: 10px}
+.center_shop_form input[type='checkbox']{
+    width: 16px;
+    height: 16px;
+    outline: none;
+    position: relative;
+    top:3px;
+}
+.center_shop_form input[type='text']{
+    border: 1px solid #dddddd; outline-style: none; height: 30px;
+    text-indent: 4px;
+}
 .box_first{ margin-top:20px;}
 .box{ width:880px;}
-.box div span{ display: block; line-height: 4rem; margin: 0; padding: 0;}
+.box div span{ line-height: 4rem; margin: 0; padding: 0;}
 .box div span div{ display:inline-block;}
 .box div span a{ color:#3788ff; text-decoration:underline;}
 .center_shop_messge{ width:880px; overflow: hidden;}
 .center_shop_messge .table{ margin-top:30px;}
 .center_shop_messge table,tr,td,th{ border:1px; position: relative;}
-.center_shop_messge table th{ font:1.6rem/1 'Microsoft Yahei'; color:#515151;}
-.center_shop_messge table td{ font:1.4rem/1 'Microsoft Yahei'; color:#515151;}
+.center_shop_messge table th{ font:1.6rem/1 'Microsoft Yahei'; color:#515151; width: 16%;}
+.center_shop_messge table td{ font:1.4rem/1 'Microsoft Yahei'; color:#515151; width: 16%;}
+.center_shop_messge table td input[type='text']{
+    border: 0;
+    outline: none;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+}
 .delete_table{ display:block; width: 18px; height: 22px; background:url(../images/delete.png); position: absolute; left: 20px;}
-.center_footer{ width: 880px; height: 400px; overflow: hidden;}
+.center_footer{ width: 880px; overflow: hidden;padding-bottom: 60px;}
 .add_btn{ width:140px; height: 40px; border-radius: 3px; font: 1.4rem/2 'Microsoft Yahei'; margin: 30px; display: block;}
 .scdd_btn{ width:286px; height: 46px; display: block; border-radius: 3px; font: 1.8rem/1.6 'Microsoft Yahei'; margin: 100px auto 60px auto; background: #3788ff;}
-.excel_box{ margin:0 auto; width: 470px; padding: 0px;}
+.excel_box{ margin:0 auto; width: 470px; padding: 0px;position: relative;}
 .excel_btn{ width:160px; height:50px; display: inline-block; border-radius: 3px; font: 1.6rem/2 'Microsoft Yahei'; color: #2d78f4; border: 1px solid #3788ff;}
-.excel_btn span{ display: block; color: #3788ff; text-align: center; font: 1.6rem/50px 'Microsoft Yahei';}
+.excel_btn span{ display: block; color: #3788ff; text-align: center; font: 1.6rem/50px 'Microsoft Yahei'; }
+.excel_download{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+

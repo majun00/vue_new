@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+.center_main_head{
+	width:800px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.center_main_head .min{
+	display:block;
+	width: 800px;
+	height: 100px;
+	border: 1px solid #dddddd;
+	margin-top: 80px;
+	margin-bottom: 20px;
+}
+
+.center_main_head .min .img{
+	width:100px;
+	height: 100px;
+	background: url(../images/tishi.png) no-repeat 40px 26px;
+	display: block;
+	float:left;
+}
+.center_main_head .min .text{
+	width:690px;
+	height: 100px;
+	display: block;
+	float:left;
+}
+.center_main_head .min .text h2{
+	font-size:1.8rem;
+	color: #515151;
+	margin: 30px 10px 10px 10px;
+	line-height: 1.8rem;
+}
+.center_main_head .min .text p{
+	font-size:1.6rem;
+	color:#919191;
+	line-height: 1.6rem;
+	margin-left: 10px;
+}
+
+
+.center_main_cet{
+	width:800px;
+	margin: 0 auto;
+	color:#515151;
+	font:400 1.6rem/1 'Microsoft Yahei';
+}
+.center_main_cet input[type='text'],select,textarea{
+	border:1px solid #dddddd;
+}
+.center_main_cet input[type='text'],select{
+	height:40px;
+	margin: 10px 0;
+}
+
+.center_main_cet select{
+	font-size:1.4rem;
+	line-height: 40px;
+	color: #919191;
+	text-indent: 10px;
+	outline: none;
+	appearance:none; 
+    -moz-appearance:none;  
+    -webkit-appearance:none;
+	background: url(../images/selectdown.png) right no-repeat;
+	border-right: 0;
+}
+
+
+.center_main_cet textarea{
+	width:360px;
+	height: 100px;
+	margin: 10px 0;
+	outline: none;
+	padding: 5px;
+}
+  .center_main_cet>div>label>i {
+	color:red;
+	display: inline-block;
+	margin: 0 36px 0 0;
+}
+.center_main_cet>div>label{
+	/* letter-spacing: 10px; */
+	width: 200px;
+}
+
+/*向后推进一步*/
+/* .center_main_cet div:nth-of-type(6) i,div:nth-of-type(5) i{
+	margin: 0 20px 0 12px;
+}
+.center_main_cet div:nth-of-type(10) i{
+	margin: 0 15px 0 12px;
+} */
+/* .center_main_cet div:nth-of-type(2) input[type='text']{
+	width:300px;
+} */
+
+/* .center_main_cet div:nth-of-type(3) input[type='text']{
+	width:200px;
+} */
+/* .center_main_cet div:nth-of-type(4) select{
+	width:200px;
+}
+
+.center_main_cet div:nth-of-type(5) input[type='text']{
+	width:300px;
+}
+.center_main_cet div:nth-of-type(6) input[type='text']{
+	width:200px;
+}
+
+.center_main_cet div:nth-of-type(7) input[type='text'],div:nth-of-type(8) input[type='text'],div:nth-of-type(12) input[type='text']{
+	width:240px;
+} */
+
+
+.center_main_cet label{
+	font:400 1.6rem/1 'Microsoft Yahei';
+	color:#515151;
+}
+
+.center_main_cet .heads{
+	height:60px;
+	border-bottom: 1px dashed #dddddd;
+	margin-bottom: 20px;
+}
+.center_main_cet h3{
+	font:600 1.8rem/1 'Microsoft Yahei';
+	color: #515151;
+	line-height: 60px;
+} 
+
+
+.center_main_cet .upbtn{
+	width:200px;
+	height: 46px;
+	color: #ffffff;
+	border-radius: 4px;
+	margin: 60px auto;
+	display: block;
+	font-size:20px;
+	padding: 0;
+	line-height: 46px;
+}
+.center_main_cet input[type='file']{
+	width:50px;
+	height: 50px;
+	outline: none;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.file-group label{
+   position:relative;
+	top:10px;
+}
+
+/* .file-group i{
+	margin: 0 12px;
+	position:relative;
+	top:10px;
+} */
+.file-group s{
+	margin-left: 10px;
+	font-size:1.4rem;
+	color: #919191;
+	position:relative;
+	top:10px;
+	
+}
+
+.file-group span{
+	display: inline-block;
+	width:50px;
+	height: 50px;
+	border: 1px dashed #dddddd;
+	background: url(../images/file-bg.png) center no-repeat;
+	position:relative;
+	margin: 10px;
+	
+}
+.file-group span:hover{
+	border:1px dashed #3788ff;
+}
+.file-group span:after{
+	content:"营业执照";
+	font-size:1.2rem;
+	position: absolute;
+	display: block;
+	top: 60px;
+	color:#6b6b6b;
+}
+
+.select-group select{
+	width:154px;
+}
+.select-group select:nth-of-type(2),select:nth-of-type(3){
+    margin-left: -5px;
+	border-left:0; 
+}
+
+.textarea-group label{
+	margin-top: 20px;
+}
+

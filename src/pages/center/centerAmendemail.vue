@@ -83,8 +83,7 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" src="../../assets/scss/center_set.scss"></style>
-<style lang="css" src="../../assets/css/center_bindemail_s.css"></style>
+<style scoped lang="css" src="../../assets/css/center_bindemail_s.css"></style>
 <style scoped lang="scss">
 
 </style>

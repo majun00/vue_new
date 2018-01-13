@@ -1,6 +1,5 @@
 {
-  "list": [
-    {
+  "list": [{
       "title": "求烧杯500个",
       "num": "订单编号: 120002",
       "date": "1天前发布",
@@ -109,10 +108,41 @@
       "deadline": "2017.12.30截止"
     }
   ],
-  "imgs":[
+  "imgs": [
     "src/assets/images/banner1.png",
     "src/assets/images/banner2.png",
     "src/assets/images/banner3.jpg"
-  ]
+  ],
+  "tables": [{
+    "user_id": "19",
+    "user_name": "123",
+    "mobile": "13986519390",
+    "create_time": "1514995200",
+    "select_time": "1514995200",
+    "dead_time": "1514995200",
+    "address": "武汉",
+    "day_limit": "30",
+    "rate": "30",
+    "freight": "包邮",
+    "pay": "对公转账",
+    "invoice": "发票要求",
+    "supply": "发票要求",
+    "products": [{
+        "id": 1,
+        "name": "烧杯",
+        "brand": "桌上",
+        "norm": "500ml",
+        "num": 1,
+        "unit": "个"
+      },
+      {
+        "id": 2,
+        "name": "量筒",
+        "brand": "桌上",
+        "norm": "1000ml",
+        "num": 2,
+        "unit": "个"
+      }
+    ]
+  }]
 }
-

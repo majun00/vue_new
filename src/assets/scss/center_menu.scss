@@ -1,30 +1,48 @@
 @import "config";
 @mixin center-i {
-  @for $index from 1 through 8{
-    li:nth-of-type(#{$index}){
-      i{
+  @for $index from 1 through 8 {
+    li:nth-of-type(#{$index}) {
+      i {
         display: inline-block;
         width: 20px;
-        height: 18px;
+        height: 20px;
         margin-right: 20px;
-        background: url("../images/center#{$index}.png") no-repeat;
+        background: url("../images/center#{$index}.png") no-repeat top center;
+        vertical-align: middle;
       }
-      &:hover{
-        a{
+      &:hover {
+        a {
           background: $blue;
           color: #fff;
-          i{
-            background: url("../images/center#{$index}_a.png") no-repeat;
+          i {
+            background: url("../images/center#{$index}_a.png") no-repeat top center;
           }
+        }
+      }
+      a.active {
+        background: $blue;
+        color: #fff;
+        i {
+          background: url("../images/center#{$index}_a.png") no-repeat top center;
         }
       }
     }
   }
 }
+
+.center_menu a {
+  &:link {
+    color: $nav-color;
+  }
+  &:visited {
+    color: $nav-color;
+  }
+}
+
 body {
-  .header{
+  .header {
     border-bottom: 0;
-    .header-center{
+    .header-center {
       display: inline-block;
       font-size: 24px;
       color: $blue;
@@ -33,28 +51,28 @@ body {
       vertical-align: bottom;
     }
   }
-  .container{
+  .container {
     margin-top: 40px;
-    .center_menu{
+    .center_menu {
       float: left;
       width: 198px;
       border: 1px solid #e8e8e8;
       text-align: center;
-      .photo{
+      .photo {
         padding-top: 30px;
         padding-bottom: 30px;
-        p{
+        p {
           margin-top: 10px;
         }
       }
-      li{
-        a{
+      li {
+        a {
           display: inline-block;
           height: 50px;
           line-height: 50px;
           width: 100%;
           border-top: 1px solid #e8e8e8;
-          s{
+          s {
             display: inline-block;
             width: 7px;
             height: 11px;
@@ -62,21 +80,20 @@ body {
             margin-left: 30px;
           }
         }
-        &:hover{
-          s{
+        &:hover,
+        .active {
+          s {
             background: url("../images/arr_r_sm_a.png");
           }
         }
       }
       @include center-i;
-
     }
-    .center_main{
+    .center_main {
       border: 1px solid #e8e8e8;
       margin-left: 197px;
       min-height: 1000px;
+      padding: 0px;
     }
   }
-
-
 }

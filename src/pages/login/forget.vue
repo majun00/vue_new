@@ -493,79 +493,97 @@ export default {
   },
   methods: {
     getPin() {
-      let num = 59;
-      clearInterval(setsund);
-      let setsund = setInterval(() => {
-        this.showPin = num + "s后重新发送";
-        this.isActive = true;
-        num--;
-        if (num < 0) {
-          clearInterval(setsund);
-          this.showPin = "获取验证码";
-          this.isActive = false;
-        }
-      }, 1000);
-
       if (this.showPin == "获取验证码") {
         this.axios
           .get(`/url/api/user/sendsms?phone=${this.phone}`)
           .then(res => {
-            console.log(res);
+            if (res.data.code == 200) {
+              this.$message({
+                showClose: true,
+                message: "发送验证码成功, 请在手机上查看",
+                type: "success"
+              });
+              clearInterval(setsund);
+              let num = 59;
+              let setsund = setInterval(() => {
+                this.showPin = num + "s后重新发送";
+                this.isActive = true;
+                num--;
+                if (num < 0) {
+                  clearInterval(setsund);
+                  this.showPin = "获取验证码";
+                  this.isActive = false;
+                }
+              }, 1000);
+            } else {
+              this.showTip = true;
+              this.tip = res.data.msg;
+            }
           });
       }
     },
     getEmailPin() {
-      let num = 59;
-      clearInterval(setsund);
-      let setsund = setInterval(() => {
-        this.showPin1 = num + "s后重新发送";
-        this.isActive1 = true;
-        num--;
-        if (num < 0) {
-          clearInterval(setsund);
-          this.showPin1 = "获取验证码";
-          this.isActive1 = false;
-        }
-      }, 1000);
-
       if (this.showPin == "获取验证码") {
-        console.log(this.email)
         this.axios
           .get(`/url/api/user/getEmailVerify?email=${this.email}`)
           .then(res => {
-            console.log(res);
+            if (res.data.code == 200) {
+              this.$message({
+                showClose: true,
+                message: "发送验证码成功, 请在手机上查看",
+                type: "success"
+              });
+              clearInterval(setsund);
+              let num = 59;
+              let setsund = setInterval(() => {
+                this.showPin = num + "s后重新发送";
+                this.isActive = true;
+                num--;
+                if (num < 0) {
+                  clearInterval(setsund);
+                  this.showPin = "获取验证码";
+                  this.isActive = false;
+                }
+              }, 1000);
+            } else {
+              this.showTip = true;
+              this.tip = res.data.msg;
+            }
           });
       }
     },
     forget_phone() {
-      let data = {
-        phone: this.phone,
-        new_pwd: this.new_pwd,
-        rnew_pwd: this.rnew_pwd,
-        code: this.code
-      };
-      console.log(data);
-      this.axios.post("/url/api/user/updatePaswd", data).then(res => {
-        console.log(res);
-        if (res.code == 200) {
-          this.$router.push("/login");
-        } else {
-          this.tip = res.data.msg;
-          this.showTip = true;
-        }
-      });
-      //   if (this.newuname == "" || this.newPW == "") {
-      //     this.tip = "请输入用户名和密码";
-      //   } else {
-      //     let date = { username: this.newuname, password: this.newPW };
-      //     this.axios.post(api, data).then(res => {
-      //       if (res.data == "ok") {
-      //         this.username = "";
-      //         this.password = "";
-      //         this.$router.push("/login");
-      //       }
-      //     });
-      //   }
+      if (sessionStorage.getItem("move")) {
+        let data = {
+          phone: this.phone,
+          new_pwd: this.new_pwd,
+          rnew_pwd: this.rnew_pwd,
+          code: this.code
+        };
+        console.log(data);
+        this.axios.post("/url/api/user/updatePaswd", data).then(res => {
+          console.log(res);
+          if (res.data == true) {
+            sessionStorage.removeItem("move");
+            this.$router.push("/login");
+          } else {
+            this.tip = "验证码错误";
+            this.showTip = true;
+          }
+        });
+        //   if (this.newuname == "" || this.newPW == "") {
+        //     this.tip = "请输入用户名和密码";
+        //   } else {
+        //     let date = { username: this.newuname, password: this.newPW };
+        //     this.axios.post(api, data).then(res => {
+        //       if (res.data == "ok") {
+        //         this.username = "";
+        //         this.password = "";
+        //         this.$router.push("/login");
+        //       }
+        //     });
+        //   }
+      }
     },
     forget_email() {
       let data = {

@@ -90,8 +90,6 @@
                 </div> -->
       </div>
     </div>
-
-
   </div>
 </template>
 
@@ -121,49 +119,54 @@ export default {
   },
   methods: {
     login() {
-      let data = {
-        phone: this.username,
-        password: this.password
-      };
-      this.axios.post("/url/api/login/index", data).then(res => {
-        if (res.data.code == 200) {
-          console.log(res.data.data.s_token);
-          localStorage.setItem("token", res.data.data.s_token);
-          localStorage.setItem("role", res.data.data.role);
-          localStorage.setItem("uid", res.data.uid);
-          this.$store.commit("saveToken", res.data.data.s_token);
-          this.$store.commit("saveUserid", res.data.uid);
-          let redirect = decodeURIComponent(this.$route.query.redirect || "/");
-          this.$router.push({
-            path: redirect
-          });
-        } else {
-          this.tip = res.data.msg;
-          this.showTip = true;
-        }
+      if (sessionStorage.getItem("move")) {
+        let data = {
+          phone: this.username,
+          password: this.password
+        };
+        this.axios.post("/url/api/login/index", data).then(res => {
+          if (res.data.code == 200) {
+            console.log(res.data.data.s_token);
+            localStorage.setItem("token", res.data.data.s_token);
+            localStorage.setItem("role", res.data.data.role);
+            localStorage.setItem("uid", res.data.uid);
+            this.$store.commit("saveToken", res.data.data.s_token);
+            this.$store.commit("saveUserid", res.data.uid);
+            let redirect = decodeURIComponent(
+              this.$route.query.redirect || "/"
+            );
+            this.$router.push({
+              path: redirect
+            });
+            sessionStorage.removeItem("move")
+          } else {
+            this.tip = res.data.msg;
+            this.showTip = true;
+          }
 
-        // if (this.username == "" || this.password == "") {
-        //   this.tip = "请输入用户名或密码";
-        // } else {
-        //   let data = {
-        //     phone: this.username,
-        //     password: this.password
-        //   };
-        //   this.axios.post("/url/api/login/index", data).then(res => {
-        //     console.log(res);
-        //     if (res.data == -1) {
-        //       this.tip = "该用户不存在";
-        //       this.shouwTip = true;
-        //     } else if (res.data == 0) {
-        //       this.tip = "密码输入错误";
-        //       this.shouwTip = true;
-        //     } else {
-        //       localStorage.setItem("username", this.username);
-        //       this.$router.push("/");
-        //     }
-        //   });
-        // }
-      });
+          // if (this.username == "" || this.password == "") {
+          //   this.tip = "请输入用户名或密码";
+          // } else {
+          //   let data = {
+          //     phone: this.username,
+          //     password: this.password
+          //   };
+          //   this.axios.post("/url/api/login/index", data).then(res => {
+          //     console.log(res);
+          //     if (res.data == -1) {
+          //       this.tip = "该用户不存在";
+          //       this.shouwTip = true;
+          //     } else if (res.data == 0) {
+          //       this.tip = "密码输入错误";
+          //       this.shouwTip = true;
+          //     } else {
+          //       localStorage.setItem("username", this.username);
+          //       this.$router.push("/");
+          //     }
+          //   });
+          // }
+        });
+      }
     },
     getPin() {
       let num = 59;
@@ -180,9 +183,11 @@ export default {
       }, 1000);
 
       if (this.showPin == "获取验证码") {
-        this.axios.get(`/url/api/login/Sendcode?phone=${this.username}`).then(res => {
-          console.log(res);
-        });
+        this.axios
+          .get(`/url/api/login/Sendcode?phone=${this.username}`)
+          .then(res => {
+            console.log(res);
+          });
       }
     },
     loginPin() {
@@ -190,9 +195,9 @@ export default {
         phone: this.username,
         code: this.pin
       };
-      console.log(data)
+      console.log(data);
       this.axios.post("/url/api/login/code", data).then(res => {
-        console.log(res)
+        console.log(res);
         if (res.data.code == 200) {
           console.log(res.data.data);
           localStorage.setItem("token", res.data.data.s_token);
@@ -209,7 +214,7 @@ export default {
           this.showTip = true;
         }
       });
-    },
+    }
   }
 };
 </script>
